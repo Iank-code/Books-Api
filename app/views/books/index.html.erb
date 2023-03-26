@@ -1,0 +1,8 @@
+<h1>All books</h1>
+
+<% @book.each do |item|%>
+    <p><%= link_to item.title, book_path(item.id) %></p>
+    <%= link_to 'Delete', book_path(item), method: :destroy %>
+<% end %>
+
+<%%>
